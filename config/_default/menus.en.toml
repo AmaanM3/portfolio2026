@@ -2,6 +2,12 @@
 none = "none"
 
 [[main]]
+name = "Posts"
+pageRef = "posts"
+identifier = "bkW2rH0kbG"
+weight = 9_990
+
+[[main]]
 name = "About"
 pageRef = "about"
 identifier = "bkW2rH0kbf"
