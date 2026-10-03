@@ -1,0 +1,7 @@
+{{ $posts := where site.RegularPages "Section" "posts" }}
+
+{{ range first 3 $posts.ByDate.Reverse }}
+<p>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</p>
+{{ end }}

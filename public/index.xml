@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Amaan Mahomed</copyright>
-    <lastBuildDate>Mon, 31 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Week 1 - JPA Basics</title>
@@ -45,6 +45,46 @@
       <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/week-3/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Week 4 - Concurrency</title>
+      <link>http://localhost:1313/posts/week-4/</link>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/week-4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Week 5 REST API</title>
+      <link>http://localhost:1313/posts/week-5/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/week-5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Week 5 - SP-1 Movie Repository</title>
+      <link>http://localhost:1313/posts/week-5-sp1/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/week-5-sp1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Week 6 REST Testing</title>
+      <link>http://localhost:1313/posts/week-6/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/week-6/</guid>
       <description></description>
       
     </item>
