@@ -3,6 +3,7 @@ title: "Week 1 - JPA Basics"
 date: 2026-08-17
 draft: false
 weight: 1
+
 ---
 
 # Week 1 - JPA Basics

@@ -3,19 +3,21 @@ title: "About"
 weight: 1
 ---
 
-# About me
+# About Me
 
-Hi, I'm Amaan. I'm currently studying for an AP Degree in Computer Science at Erhvervsakademi Lyngby and I'm on my 3rd semester.
+Hi, Im Amaan. I'm currently studying for an AP Degree in Computer Science at Erhvervsakademi Lyngby, and I'm on my 3rd semester.
 
-I have always been interested in technology IT, and software, and I especially like working with backend development, frontend, data, databases and APIs.
+Ive always been interested in IT, technology and software development. I especially enjoy working with backend development, databases and APIs, but I also like working with frontend development.
 
-I made this portfolio so I can keep track of what I learn during the semester and also show some of the projects I have worked on.
+During my studies, I've gained experience with different programming languages, technologies and tools through assignments and projects.
 
-## What you can find here
+I created this portfolio to document what I learn throughout the semester and to showcase some of the projects I've worked on.
 
-On this website I post a little about what I learn each week.
+## What You Can Find Here
 
-I also want to use it to show some of my bigger projects and some of the technologies I have worked with.
+On this website, I share what I've learned each week and how I've worked with different topics during my studies.
+
+I also use this portfolio to showcase some of my bigger projects, including DriveApp, which is a backend application we developed during our 3rd semester.
 
 ## Skills
 
@@ -31,6 +33,8 @@ HTML, CSS and JavaScript
 
 JSON and Data Integration
 
+JWT and BCrypt
+
 ## Tools
 
 IntelliJ IDEA
@@ -39,7 +43,7 @@ Visual Studio Code
 
 Git and GitHub
 
-Docker
+Docker and Docker Compose
 
 DigitalOcean
 
@@ -47,13 +51,15 @@ PostgreSQL
 
 pgAdmin
 
-## What I'm doing now
+## What I'm Working On
 
-Right now I'm on my 3rd semester at Erhvervsakademi Lyngby.
+Right now, Im focusing on improving my skills in backend development, databases, APIs and software architecture.
 
-I'm mainly working with backend/frontend development, databases, APIs and different semester projects.
+One of my main projects this semester has been DriveApp, which I developed together with a fellow student.
 
-I'm also continuing to update this portfolio as I learn new things.
+Through this project, Ive gained more experience with REST APIs, security, automated testing and deployment.
+
+I'm continuing to learn new technologies and improve my programming skills as I work on new projects.
 
 ## Education
 
@@ -63,8 +69,7 @@ I'm also continuing to update this portfolio as I learn new things.
 
 Erhvervsakademi Lyngby
 
-
-### HHX Business college
+### HHX Business College
 
 2020 to 2023
 
@@ -72,6 +77,6 @@ Erhvervsakademi Lyngby
 
 GitHub: [github.com/AmaanM3](https://github.com/AmaanM3)
 
-LinkedIn: (TO BE CONTINUED)
+LinkedIn: Coming soon
 
-Email: (TO BE CONTINUED)
+Email: Coming soon

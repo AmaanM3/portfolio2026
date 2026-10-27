@@ -1,11 +1,16 @@
 
 ---
 title: "Exam Portfolio"
+date: 2026-10-27
+draft: false
+weight: 1
 description: "My third semester backend exam portfolio"
-showDate: false
-showReadingTime: false
-showWordCount: false
+showDate: true
+showReadingTime: true
+showWordCount: true
+showAuthor: false
 ---
+
 
 # DriveApp – Driving School Management System
 
