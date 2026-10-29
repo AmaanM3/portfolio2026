@@ -45,11 +45,6 @@ On this page, I will go through how we developed DriveApp throughout the semeste
 
 [To check if DriveApp is running](https://driveapp.website/api/health)
 
-**Exam Video**
-
-[Watch our DriveApp Exam Video](INDSÆT_VIDEO_LINK_HER)
-
-
 ---
 
 ## Project Development
@@ -65,7 +60,7 @@ The table below shows the topics we worked with each week and how we used them i
 | Week 1 | JPA Basics | We used Hibernate, JPA and PostgreSQL to set up our database and create our first entities and DAO classes. |
 | Week 2 | JPA Relations | We created relationships between Student, Instructor, Lesson and Booking, and worked with JPQL queries. |
 | Week 3 | Data Integration | We integrated Google Gemini using Java HttpClient, JSON and DTOs to create our AI driving assistant. |
-| Week 4 | Concurrency | We worked with threads, race conditions and synchronized in our booking system, and CompletableFuture for Gemini. |
+| Week 4 | Concurrency | We learned about threads, race conditions and synchronized, and used CompletableFuture to handle asynchronous requests to Google Gemini. |
 | Week 5 | REST API | We used Javalin to create routes, controllers and endpoints for students, instructors, lessons and bookings. |
 | Week 6 | REST Testing | We used JUnit, REST Assured and Testcontainers to test our API endpoints and database operations. |
 | Week 7 | Security | We implemented BCrypt, JWT authentication and role based access control to protect our API. |
@@ -219,7 +214,7 @@ We also worked with CompletableFuture in our Gemini AI integration to handle asy
 * Worked with Runnable and ExecutorService
 * Learned about race conditions
 * Worked with synchronized
-* Developed our BookingService class
+* Implemented booking logic in BookingController and BookingDAOImpl
 * Added checks to prevent students from booking an already booked lesson
 * Worked with CompletableFuture in our DrivingAiService
 * Tested different booking scenarios
@@ -307,8 +302,8 @@ We also worked with two separate databases, one for production and one for testi
 * Tested both valid and invalid requests
 * Created tests for students, instructors, lessons and bookings
 * Worked with Testcontainers and PostgreSQL for database testing
-* Created a separate local PostgreSQL database for testing
-* Updated our database configuration to connect to the test database
+* Used Testcontainers to automatically create temporary PostgreSQL 16 databases for testing
+* Created shared DatabaseTest and ApiTest classes to automatically start the database and Javalin server
 * Made sure our tests did not affect the production database
 * Used test data without adding test users or bookings to production
 * Tested our DAO classes and database operations
@@ -323,28 +318,23 @@ I learned how to use REST Assured to test API endpoints without having to send r
 
 I also got a better understanding of how Testcontainers can be used to test our application with PostgreSQL.
 
-One important thing we worked on was separating our production database from our test database.
+One important thing we worked on was separating our production database from our test environment.
 
-We created a local PostgreSQL test database and changed our configuration so the tests would use the correct database.
+At first, we used a separate local PostgreSQL test database, but later we improved our testing setup by using Testcontainers.
 
-We did this because we did not want our tests to create test users, bookings or other test data in the production database.
+Testcontainers automatically creates temporary PostgreSQL databases when we run our tests. We also made our API tests start Javalin automatically and create their own test users.
 
-This helped me understand why it is important to use different database configurations for testing and production.
-
-Testing different scenarios also helped me understand how to find errors and make sure our API handles invalid requests correctly.
+This helped me understand why it is important to keep testing separate from production and how automated test environments can make testing easier and more reliable.
 
 ### Result
 
 By the end of the week, we had added more automated tests to DriveApp.
 
-We could now test our REST API, DAO classes and different parts of our application.
+We improved our testing setup by using Testcontainers to automatically create temporary PostgreSQL databases for our tests.
 
-We also got our tests running with a separate test database, so we could test our API without affecting the production data.
+Our API tests can now start Javalin automatically on an available port and create their own test users without needing a manually configured test database.
 
-This made our testing setup safer and helped us avoid filling the production database with test users and bookings.
-
-Overall, this made it easier to find problems when changing our code and helped us make DriveApp more reliable.
-
+This made our tests more independent and easier to run locally and through GitHub Actions. It also helped us keep test data separate from our production database and made DriveApp more reliable.
 
 
 ---
@@ -461,17 +451,23 @@ This made our code easier to understand and helped us avoid exposing sensitive i
 
 ### Services and Booking Logic
 
-We created service classes like BookingService to handle booking logic and DrivingAiService to communicate with Google Gemini.
+We implemented our booking logic in BookingController and BookingDAOImpl. Before creating a booking, we check that the student and lesson exist and that the lesson has not already been booked.
 
-Separating this logic from our controllers made the application easier to organize and maintain.
+We also created DrivingAiService to communicate with Google Gemini using Java HttpClient and CompletableFuture.
+
+This separation helped us organize our code and keep the database operations separate from the API controllers.
 
 ### Separate Test and Production Databases
 
-We decided to use separate databases for production and testing.
+We decided to separate our production database from our automated testing environment.
 
-We created a local PostgreSQL test database and updated our configuration so our REST Assured tests would use the test database.
+Our deployed application uses a PostgreSQL database, while our automated tests use temporary PostgreSQL 16 databases created through Testcontainers.
 
-This was important because we did not want test users or bookings to affect our production database.
+We also created shared DatabaseTest and ApiTest classes to automatically start and stop the test database and Javalin server.
+
+This means we can run our tests without manually creating a test database or starting the application ourselves.
+
+This was important because we wanted to make sure our tests did not create test users or bookings in our production database.
 
 ### Security
 
@@ -506,7 +502,9 @@ One of the biggest things I learned was how the different parts of a backend app
 
 We also faced some challenges during the project, especially with testing and getting our application to work correctly with different database configurations.
 
-For example, we had to set up a separate test database so our REST Assured tests would not affect our production data. We also spent time fixing issues with our tests and GitHub Actions.
+For example, we initially used a separate local PostgreSQL ttest database, but later improved our testing setup by using Testcontainers. Our tests now automatically create temporary PostgreSQL databases and start Javalin on an available port.
+
+We also worked on fixing issues with our tests and GitHub Actions. This helped me understand why automated testing and keeping the test environment separate from production are important.
 
 Another challenge we had was with our domain from DanDomain. We had problems getting the DNS settings to work correctly, especially with the nameservers (NS1, NS2 and NS3).
 
