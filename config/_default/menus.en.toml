@@ -2,15 +2,20 @@
 none = "none"
 
 [[main]]
-name = "Exam Portfolio"
-pageRef = "exam-portfolio"
-weight = 9_995
-
-[[main]]
-name = "Posts"
+name = "Backend"
 pageRef = "posts"
 identifier = "bkW2rH0kbG"
 weight = 9_990
+
+[[main]]
+name = "Frontend"
+pageRef = "frontend"
+weight = 9_991
+
+[[main]]
+name = "Exam Portfolio"
+pageRef = "exam-portfolio"
+weight = 9_995
 
 [[main]]
 name = "About"
