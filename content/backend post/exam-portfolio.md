@@ -80,14 +80,14 @@ These posts show my learning throughout the semester, while the sections below e
 
 ### Weekly Blog Posts
 
-* [Week 1 - JPA Basics]({{< relref "posts/Week-1.md" >}})
-* [Week 2 - JPA Relations]({{< relref "posts/Week-2.md" >}})
-* [Week 3 - Data Integration]({{< relref "posts/Week-3.md" >}})
-* [Week 4 - Concurrency]({{< relref "posts/Week-4.md" >}})
-* [Week 5 - REST API]({{< relref "posts/Week-5.md" >}})
-* [Week 6 - REST Testing]({{< relref "posts/Week-6.md" >}})
-* [Week 7 - Security]({{< relref "posts/Week-7.md" >}})
-* [Week 8 - Deployment]({{< relref "posts/Week-8.md" >}})
+* [Week 1 - JPA Basics]({{< relref "backend post/Week-1.md" >}})
+* [Week 2 - JPA Relations]({{< relref "backend post/Week-2.md" >}})
+* [Week 3 - Data Integration]({{< relref "backend post/Week-3.md" >}})
+* [Week 4 - Concurrency]({{< relref "backend post/Week-4.md" >}})
+* [Week 5 - REST API]({{< relref "backend post/Week-5.md" >}})
+* [Week 6 - REST Testing]({{< relref "backend post/Week-6.md" >}})
+* [Week 7 - Security]({{< relref "backend post/Week-7.md" >}})
+* [Week 8 - Deployment]({{< relref "backend post/Week-8.md" >}})
 
 ---
 

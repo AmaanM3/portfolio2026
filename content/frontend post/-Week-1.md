@@ -34,7 +34,7 @@ On Wednesday, I created a React project using Vite. I worked with JSX, functiona
 
 I also worked with props to pass data between components and fetching data from an API. This gave me a better understanding of how React applications are structured.
 
-[GitHub Repository](https://github.com/AmaanM3/Frontend-Codelab-Week1)
+[GitHub Repository](https://github.com/AmaanM3/react-import-export)
 
 ## Reflection
 

@@ -27,4 +27,4 @@ We built it using Java, Javalin, Hibernate/JPA and PostgreSQL, and also added se
 
 **GitHub Repository:** [DriveApp](https://github.com/Musa-909/DriveApp)
 
-**Exam Portfolio:** [Read more about DriveApp]({{< relref "posts/exam-portfolio.md" >}})
+**Exam Portfolio:** [Read more about DriveApp]({{< relref "backend post/exam-portfolio.md" >}})

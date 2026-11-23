@@ -1,27 +1,20 @@
-[[main]]
-none = "none"
 
 [[main]]
 name = "Backend"
-pageRef = "posts"
-identifier = "bkW2rH0kbG"
-weight = 9_990
+pageRef = "backend post"
+weight = 10
 
 [[main]]
 name = "Frontend"
-pageRef = "frontend"
-weight = 9_991
+pageRef = "frontend post"
+weight = 20
 
 [[main]]
 name = "Exam Portfolio"
-pageRef = "exam-portfolio"
-weight = 9_995
+pageRef = "backend post/exam-portfolio"
+weight = 30
 
 [[main]]
 name = "About"
 pageRef = "about"
-identifier = "bkW2rH0kbf"
-weight = 9_999
-
-[[footer]]
-none = "none"
+weight = 40
